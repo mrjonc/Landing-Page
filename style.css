@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #ff0000;
+  --primary-hover: #ca0d0d;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+  --text-white: #ffffff;
+  --font-main: "Arial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./img/woman-business.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa 100% da altura da tela */
+}
+
+.logo img {
+  max-width: 150px;
+  margin: 16px 30px;
+}
+
+.container {
+  color: white;
+  flex: 1;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.containerLeft {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.containerLeft h3 {
+  text-align: left;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.containerLeft p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.containerRight {
+  background-color: rgba(0, 0, 0, 0.479);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+}
+
+.form button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  transition: 0.4s;
+}
+
+.form button:hover {
+  background-color: var(--primary-hover);
+}
+
+.footer {
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .containerLeft,
+  .containerRight {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .containerLeft h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .containerLeft p {
+    text-align: center;
+  }
+}
